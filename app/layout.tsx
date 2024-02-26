@@ -16,11 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`transition duration-300 ${inter.className}`}>
-      <body className='flex flex-col min-h-screen'>
+    <html lang='en' suppressHydrationWarning>
+      <title>{metadata.title}</title>
+      <body className='scroll-smooth box-border p-0 m-0 overflow-x-hidden bg-gray-100 dark:bg-gray-800'>
         <Providers>
-          <Header />
-          <main>{children}</main>
+          <main className='transition-all duration-300 ease-in-out h-svh min-h-svh w-svw bg-transparent text-gray-800 dark:text-gray-200 flex flex-col items-center'>
+            <Header />
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

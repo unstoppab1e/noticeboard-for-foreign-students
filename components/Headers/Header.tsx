@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className='flex justify-between items-center p-5 bg-blue-500 text-white'>
+    <header className='flex justify-between items-center p-5 bg-transparent text-gray-800 dark:text-white'>
       <h1 className='text-2xl'>My Website</h1>
       <DarkMode />
     </header>
