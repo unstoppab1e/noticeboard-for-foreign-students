@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import { ClipLoader } from 'react-spinners';
@@ -17,7 +17,7 @@ function DarkMode({}: IDarkMode) {
   }, [setTheme]);
 
   return (
-    <button className='fixed bottom-5 right-5 bg-gray-900 text-gray-200 p-3 rounded-full dark:bg-gray-200 dark:text-gray-900 cursor-pointer'>
+    <button className=' right-0 p-3 rounded-full bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-200 cursor-pointer'>
       {!mounted ? (
         <ClipLoader size={20} />
       ) : resolvedTheme === 'dark' ? (

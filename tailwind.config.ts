@@ -13,7 +13,11 @@ const config: Config = {
         'h1-responsive': 'clamp(1.5rem, 2.5vw, 3rem)',
         'h2-responsive': 'clamp(0.5rem, 1.5vw, 1.5rem)',
       },
+      fontFamily: {
+        roboco: ['var(--roboco)'],
+      },
       colors: {
+        crimson: '#450a0a',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
