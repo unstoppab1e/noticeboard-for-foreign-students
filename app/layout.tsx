@@ -5,6 +5,7 @@ import Header from '../components/Headers/Header';
 import Providers from './theme-provider';
 import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 import { Roboto } from 'next/font/google';
+import Footer from '@/components/Footer/Footer';
 
 const roboco = Roboto({
   weight: ['400', '500', '700'],
@@ -27,6 +28,7 @@ export default function RootLayout({
           >
             <Header />
             {children}
+            <Footer />
             <ThemeSwitcher />
           </main>
         </Providers>
