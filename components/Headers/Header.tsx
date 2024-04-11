@@ -29,12 +29,18 @@ const Header: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className='text-blue-600 dark:text-[#ffa116]'>
+          <div className='text-blue-600 dark:text-[#ffa116] flex justify-between gap-2'>
             <Link
               href='/login'
-              className=' px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-300 font-semibold dark:bg-[#ffa1161f] dark:bg-opacity-10  animate-smooth flex items-center group'
+              className=' px-4 py-2 bg-blue-500 text-white dark:text-[#ffa116] rounded hover:bg-blue-700 transition-colors duration-300 font-semibold dark:bg-[#ffa1161f] dark:bg-opacity-10  animate-smooth flex items-center group'
             >
               Login
+            </Link>
+            <Link
+              href='/register'
+              className=' px-4 py-2 bg-blue-500 text-white dark:text-[#ffa116] rounded hover:bg-blue-700 transition-colors duration-300 font-semibold dark:bg-[#ffa1161f] dark:bg-opacity-10  animate-smooth flex items-center group'
+            >
+              Register
             </Link>
           </div>
         </div>
@@ -64,6 +70,14 @@ const Header: React.FC = () => {
                   d='M4 6h16M4 12h16m-7 6h7'
                 />
               </svg>
+            </button>
+            <button className='text-blue-600 dark:text-[#ffa116]'>
+              <Link
+                href='/register'
+                className=' px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-300 font-semibold dark:bg-[#ffa1161f] dark:bg-opacity-10  animate-smooth flex items-center group'
+              >
+                Register
+              </Link>
             </button>
           </div>
         </div>
