@@ -39,8 +39,8 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='block lg:hidden'>
-        <div className='px-2 py-'>
+      <div className='block lg:hidden min-h-10'>
+        <div className='px-2 py-5'>
           <div className='flex justify-around items-center'>
             <Link href='/' className='font-bold dark:text-white'>
               KOREA_UNIVERSITY
